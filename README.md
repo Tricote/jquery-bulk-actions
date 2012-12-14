@@ -15,30 +15,30 @@ To get started, copy the files from the src/ folder to your project, and link yo
 <script src="PATH_TO_SRC/jquery.bulk-actions.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-    bulk = $(".item-checkbox").bulk({
-    	// Name of the data HTML attribute of the checkbox, 
-    	// used to store declare the id of the item
-    	checkboxDataItemId: "item-id",
+		bulk = $(".item-checkbox").bulk({
+			// Name of the data HTML attribute of the checkbox, 
+			// used to store declare the id of the item
+			checkboxDataItemId: "item-id",
 
-    	// Hidden form field where item ids are copied, separated by a comma
-    	dumpField: "#form_items_ids",
+			// Hidden form field where item ids are copied, separated by a comma
+			dumpField: "#form_items_ids",
 
-      // Actions to toggle checkbox on the current page
-      checkAllOnPageElement: "#checkbox-check-all-on-page",
-      uncheckAllOnPageElement: "#checkbox-uncheck-all-on-page",
-      toggleAllOnPageElement: "#checkbox-toggle-all-on-page",
-      resetAllElement: "#checkbox-uncheck-all",
+			// Actions to toggle checkbox on the current page
+			checkAllOnPageElement: "#checkbox-check-all-on-page",
+			uncheckAllOnPageElement: "#checkbox-uncheck-all-on-page",
+			toggleAllOnPageElement: "#checkbox-toggle-all-on-page",
+			resetAllElement: "#checkbox-uncheck-all",
 
-      // localStorage key used to store the array of selected item ids 
-      storageKey: "selectedItemIds",
+			// localStorage key used to store the array of selected item ids 
+			storageKey: "selectedItemIds",
 
-      onEmpty: function(){
-        // Hide action buttons
-      },
-      onNotEmpty: function(){
-        // Show action buttons
-      }
-    });
+			onEmpty: function(){
+			  // Hide action buttons
+			},
+			onNotEmpty: function(){
+			  // Show action buttons
+			}
+		});
 </script>
 ```
 
