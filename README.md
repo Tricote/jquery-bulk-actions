@@ -18,10 +18,10 @@ To get started, copy the files from the src/ folder to your project, and link yo
     bulk = $(".item-checkbox").bulk({
     	// Name of the data HTML attribute of the checkbox, 
     	// used to store declare the id of the item
- 			checkboxDataItemId: "item-id",
+    	checkboxDataItemId: "item-id",
 
-      // Hidden form field where item ids are copied, separated by a comma
-      dumpField: "#form_items_ids",
+    	// Hidden form field where item ids are copied, separated by a comma
+    	dumpField: "#form_items_ids",
 
       // Actions to toggle checkbox on the current page
       checkAllOnPageElement: "#checkbox-check-all-on-page",
@@ -76,6 +76,6 @@ You can also use a form to send item ids to the server
 ``` html
 <form action="/perform_bulk_action">
 	<input type="hidden" id="form_items_ids" name="item_ids" value="">
-	<input type"submit" value"Validate">
+	<input type="submit" value="Validate">
 </form>
 ```
