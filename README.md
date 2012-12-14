@@ -20,7 +20,7 @@ To get started, copy the files from the src/ folder to your project, and link yo
     	// used to store declare the id of the item
  			checkboxDataItemId: "item-id",
 
- 			// Hidden form field where item ids are copied, separated by a comma
+      // Hidden form field where item ids are copied, separated by a comma
       dumpField: "#form_items_ids",
 
       // Actions to toggle checkbox on the current page
